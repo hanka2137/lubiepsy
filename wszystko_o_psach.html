@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wszystko o Psach - Najlepszy Przyjaciel Człowieka</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        amberCustom: {
+                            50: '#fdf8f0',
+                            100: '#fbeed9',
+                            500: '#d97706',
+                            600: '#b45309',
+                            800: '#92400e',
+                            900: '#78350f',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-amberCustom-50 text-stone-800 font-sans antialiased selection:bg-amber-500 selection:text-white">
+
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-stone-200 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-amber-500 flex items-center justify-center text-white shadow-md shadow-amber-500/20">
+                    <i class="fa-solid fa-dog text-xl"></i>
+                </div>
+                <span class="text-xl font-bold tracking-tight text-stone-900">PsiŚwiat<span class="text-amber-600">.pl</span></span>
+            </div>
+            
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-stone-600">
+                <a href="#o-psach" class="hover:text-amber-600 transition-colors">O psach</a>
+                <a href="#rasy" class="hover:text-amber-600 transition-colors">Popularne rasy</a>
+                <a href="#porady" class="hover:text-amber-600 transition-colors">Porady</a>
+                <a href="#kontakt" class="hover:text-amber-600 transition-colors">Kontakt</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="#rasy" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-medium text-sm shadow-lg shadow-amber-600/25 transition-all transform hover:-translate-y-0.5">
+                    Wybierz rasę
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative bg-stone-900 text-white overflow-hidden py-24 lg:py-32">
+            <div class="absolute inset-0 opacity-40">
+                <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=2000&q=80" alt="Szczęśliwy pies w trawie" class="w-full h-full object-cover">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-stone-900 via-stone-900/60 to-transparent"></div>
+            
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left">
+                <div class="max-w-3xl">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 border border-amber-500/30 text-amber-300 text-xs font-semibold mb-6 backdrop-blur-md">
+                        <i class="fa-solid fa-heart"></i> Miłość bezwarunkowa
+                    </div>
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-none mb-6">
+                        Najlepszy przyjaciel <span class="text-amber-400">człowieka</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-stone-300 mb-10 leading-relaxed font-light">
+                        Odkryj fascynujący świat psów. Dowiedz się, jak o nie dbać, poznaj popularne rasy i zrozum, dlaczego czworonogi zasługują na miano naszych najwierniejszych towarzyszy.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center sm:justify-start">
+                        <a href="#rasy" class="inline-flex items-center justify-center px-8 py-4 rounded-2xl bg-amber-500 hover:bg-amber-600 text-white font-semibold shadow-xl shadow-amber-500/30 transition-all transform hover:-translate-y-1">
+                            Poznaj rasy psów <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="#porady" class="inline-flex items-center justify-center px-8 py-4 rounded-2xl bg-white/10 hover:bg-white/20 text-white font-semibold backdrop-blur-md border border-white/10 transition-all">
+                            Porady opiekuna
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="o-psach" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-amber-600 font-semibold uppercase tracking-wider text-sm">Dlaczego są wyjątkowe?</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-stone-900 mt-2 mb-4">Więcej niż tylko zwierzę</h2>
+                    <p class="text-stone-600 text-lg">Pies od tysięcy lat towarzyszy człowiekowi, tworząc unikalną wieź opartą na zaufaniu, wierności i bezwarunkowej miłości.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-amberCustom-50 p-8 rounded-3xl border border-amber-100 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-14 h-14 rounded-2xl bg-amber-500 text-white flex items-center justify-center text-2xl mb-6 shadow-md shadow-amber-500/20">
+                            <i class="fa-solid fa-shield-heart"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-stone-900 mb-3">Wierność i Oddanie</h3>
+                        <p class="text-stone-600 leading-relaxed">
+                            Pies jest jedynym stworzeniem na ziemi, które kocha cię bardziej niż samego siebie. Jego lojalność nie zna granic, a radość z powrotu właściciela do domu jest zawsze szczera.
+                        </p>
+                    </div>
+
+                    <div class="bg-amberCustom-50 p-8 rounded-3xl border border-amber-100 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-14 h-14 rounded-2xl bg-amber-500 text-white flex items-center justify-center text-2xl mb-6 shadow-md shadow-amber-500/20">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-stone-900 mb-3">Wysoka Inteligencja</h3>
+                        <p class="text-stone-600 leading-relaxed">
+                            Wiele ras psów wykazuje zdolność rozumienia setek słów, rozwiązywania skomplikowanych zagadek logicznych oraz szybkiego uczenia się nowych komend i ról społecznych.
+                        </p>
+                    </div>
+
+                    <div class="bg-amberCustom-50 p-8 rounded-3xl border border-amber-100 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-14 h-14 rounded-2xl bg-amber-500 text-white flex items-center justify-center text-2xl mb-6 shadow-md shadow-amber-500/20">
+                            <i class="fa-solid fa-hand-holding-medical"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-stone-900 mb-3">Terapia i Pomoc</h3>
+                        <p class="text-stone-600 leading-relaxed">
+                            Psy ratownicze, przewodnicy dla niewidomych oraz psy terapeutyczne (dogoterapia) pomagają ludziom w codziennym życiu, redukując stres i niosąc ratunek w trudnych chwilach.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="rasy" class="py-24 bg-amberCustom-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <span class="text-amber-600 font-semibold uppercase tracking-wider text-sm">Encyklopedia rasy</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-stone-900 mt-2 mb-4">Popularne rasy psów</h2>
+                    <p class="text-stone-600 text-lg">Znajdź czworonoga, który najlepiej pasuje do Twojego stylu życia. Użyj filtrów, aby dobrać rasę według wielkości.</p>
+                </div>
+
+                <!-- Size Filters -->
+                <div class="flex flex-wrap justify-center gap-3 mb-12">
+                    <button onclick="filterBreeds('all')" class="filter-btn active-filter px-6 py-2.5 rounded-xl font-medium text-sm transition-all bg-amber-600 text-white shadow-md shadow-amber-600/20">
+                        Wszystkie rasy
+                    </button>
+                    <button onclick="filterBreeds('mały')" class="filter-btn px-6 py-2.5 rounded-xl font-medium text-sm transition-all bg-white text-stone-700 hover:bg-stone-100 border border-stone-200">
+                        Małe
+                    </button>
+                    <button onclick="filterBreeds('średni')" class="filter-btn px-6 py-2.5 rounded-xl font-medium text-sm transition-all bg-white text-stone-700 hover:bg-stone-100 border border-stone-200">
+                        Średnie
+                    </button>
+                    <button onclick="filterBreeds('duży')" class="filter-btn px-6 py-2.5 rounded-xl font-medium text-sm transition-all bg-white text-stone-700 hover:bg-stone-100 border border-stone-200">
+                        Duże
+                    </button>
+                </div>
+
+                <!-- Breed Cards Grid -->
+                <div id="breeds-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Cards will be populated and filtered via JS -->
+                </div>
+            </div>
+        </section>
+
+        <section id="porady" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-amber-600 font-semibold uppercase tracking-wider text-sm">Zdrowie i szczęście</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-stone-900 mt-2 mb-4">Porady dotyczące opieki</h2>
+                    <p class="text-stone-600 text-lg">Zapewnij swojemu pupilowi długie i zdrowe życie dzięki sprawdzonym zasadom opieki.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Tip 1 -->
+                    <div class="bg-stone-50 p-6 rounded-3xl border border-stone-200 flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl mb-6">
+                                <i class="fa-solid fa-bowl-food"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-stone-900 mb-3">Zbilansowane żywienie</h3>
+                            <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                                Dobierz karmę odpowiednią do wieku, wagi i poziomu aktywności psa. Unikaj karmienia resztkami ze stołu, szczególnie czekoladą, cebulą i winogronami, które są toksyczne.
+                            </p>
+                        </div>
+                        <span class="text-xs font-semibold text-amber-600 flex items-center gap-1">
+                            <i class="fa-solid fa-check"></i> Klucz do zdrowia
+                        </span>
+                    </div>
+
+                    <!-- Tip 2 -->
+                    <div class="bg-stone-50 p-6 rounded-3xl border border-stone-200 flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl mb-6">
+                                <i class="fa-solid fa-person-running"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-stone-900 mb-3">Aktywność fizyczna</h3>
+                            <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                                Każdy pies potrzebuje ruchu, niezależnie od rasy. Regularne spacery, bieganie oraz zabawy węchowe stymulują umysł i zapobiegają problemom behawioralnym.
+                            </p>
+                        </div>
+                        <span class="text-xs font-semibold text-amber-600 flex items-center gap-1">
+                            <i class="fa-solid fa-check"></i> Ruch to zdrowie
+                        </span>
+                    </div>
+
+                    <!-- Tip 3 -->
+                    <div class="bg-stone-50 p-6 rounded-3xl border border-stone-200 flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl mb-6">
+                                <i class="fa-solid fa-stethoscope"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-stone-900 mb-3">Profilaktyka zdrowotna</h3>
+                            <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                                Regularnie odwiedzaj lekarza weterynarii na kontrole i szczepienia. Pamiętaj o ochronie przed kleszczami, pchłami oraz regularnym odrobaczaniu czworonoga.
+                            </p>
+                        </div>
+                        <span class="text-xs font-semibold text-amber-600 flex items-center gap-1">
+                            <i class="fa-solid fa-check"></i> Badania kontrolne
+                        </span>
+                    </div>
+
+                    <!-- Tip 4 -->
+                    <div class="bg-stone-50 p-6 rounded-3xl border border-stone-200 flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl mb-6">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-stone-900 mb-3">Socjalizacja i wychowanie</h3>
+                            <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                                Od szczeniaka ucz psa kontaktu z innymi zwierzętami, ludźmi oraz otoczeniem. Pozytywne wzmocnienie buduje silną i bezpieczną więź między wami.
+                            </p>
+                        </div>
+                        <span class="text-xs font-semibold text-amber-600 flex items-center gap-1">
+                            <i class="fa-solid fa-check"></i> Łagodna nauka
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontakt" class="py-24 bg-stone-900 text-white relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#d97706_1px,transparent_1px)] [background-size:16px_16px]"></div>
+            
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <span class="text-amber-400 font-semibold uppercase tracking-wider text-sm">Dołącz do społeczności</span>
+                        <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight mt-2 mb-6">
+                            Zapisz się do psiego <span class="text-amber-400">newslettera</span>
+                        </h2>
+                        <p class="text-stone-300 text-lg mb-8 leading-relaxed">
+                            Otrzymuj co tydzień porady behawioristów, przepisy na zdrowe psie przysmaki oraz powiadomienia o nowych artykułach bezpośrednio na swoją skrzynkę mailową.
+                        </p>
+                        
+                        <div class="flex flex-col sm:flex-row gap-6">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold">✓</div>
+                                <span class="text-stone-300 font-medium">Brak spamu</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold">✓</div>
+                                <span class="text-stone-300 font-medium">Wiedza ekspercka</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white text-stone-900 p-8 sm:p-10 rounded-3xl shadow-2xl">
+                        <h3 class="text-2xl font-bold mb-6">Bądźmy w kontakcie!</h3>
+                        <form id="newsletter-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-stone-700 mb-1">Twoje Imię</label>
+                                <input type="text" id="name" required class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:ring-2 focus:ring-amber-500 focus:outline-none transition-all" placeholder="np. Anna">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-stone-700 mb-1">Adres E-mail</label>
+                                <input type="email" id="email" required class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:ring-2 focus:ring-amber-500 focus:outline-none transition-all" placeholder="anna@example.com">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-stone-700 mb-1">Wiadomość / Pytanie</label>
+                                <textarea rows="3" class="w-full px-4 py-3 rounded-xl border border-stone-300 focus:ring-2 focus:ring-amber-500 focus:outline-none transition-all" placeholder="Napisz do nas..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full py-4 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-semibold shadow-lg shadow-amber-600/25 transition-all">
+                                Zapisz się / Wyślij
+                            </button>
+                        </form>
+                        <div id="form-success" class="hidden mt-4 p-4 bg-emerald-50 text-emerald-800 rounded-xl text-center font-medium">
+                            Dziękujemy! Twoja wiadomość została wysłana.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-stone-950 text-stone-400 py-12 border-t border-stone-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-amber-500 flex items-center justify-center text-white">
+                    <i class="fa-solid fa-dog text-sm"></i>
+                </div>
+                <span class="text-white font-bold tracking-tight">PsiŚwiat.pl</span>
+            </div>
+            <p class="text-sm text-stone-500">© 2026 PsiŚwiat.pl. Wszelkie prawa zastrzeżone. Stworzone z miłości do psów.</p>
+            <div class="flex items-center gap-4 text-lg">
+                <a href="#" class="hover:text-amber-400 transition-colors"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="hover:text-amber-400 transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-amber-400 transition-colors"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Data for dog breeds with sizes
+        const breedsData = [
+            {
+                name: "Labrador Retriever",
+                size: "duży",
+                image: "https://images.unsplash.com/photo-1579213833506-1456d6820462?auto=format&fit=crop&w=800&q=80",
+                traits: ["Towarzyski", "Inteligentny", "Łagodny"],
+                description: "Jeden z najpopularniejszych psów na świecie. Doskonały pies rodzinny, bardzo energiczny i oddany człowiekowi."
+            },
+            {
+                name: "Owczarek Niemiecki",
+                size: "duży",
+                image: "https://images.unsplash.com/photo-1589941013453-ec89f33b5e95?auto=format&fit=crop&w=800&q=80",
+                traits: ["Lojalny", "Czujny", "Pracowity"],
+                description: "Niezwykle inteligentny pies użytkowy, idealny do stróżowania, sportów kynologicznych oraz jako niezawodny obrońca rodziny."
+            },
+            {
+                name: "Golden Retriever",
+                size: "duży",
+                image: "https://images.unsplash.com/photo-1633722715463-d30f4f325e24?auto=format&fit=crop&w=800&q=80",
+                traits: ["Przyjazny", "Ufnym", "Chętny do nauki"],
+                description: "Słynie ze swojego złotego umposobienia. Świetny kompan dla dzieci, często wykorzystywany w terapii i ratownictwie."
+            },
+            {
+                name: "Mops",
+                size: "mały",
+                image: "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=800&q=80",
+                traits: ["Uroczy", "Towarzyski", "Spokojny"],
+                description: "Mały pies o wielkim sercu. Uwielbia spędzać czas na kanapie obok właściciela, jest wesoły i bardzo lojalny."
+            },
+            {
+                name: "Border Collie",
+                size: "średni",
+                image: "https://images.unsplash.com/photo-1503256207526-0d5d80fa2f47?auto=format&fit=crop&w=800&q=80",
+                traits: ["Najinteligentniejszy", "Energiczny", "Skupiony"],
+                description: "Pies pasterski o niespożytej energii. Wymaga ciągłego treningu psychicznego i fizycznego, mistrz sportów psich."
+            },
+            {
+                name: "Buldog Francuski",
+                size: "mały",
+                image: "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=800&q=80",
+                traits: ["Czuły", "Zabawny", "Odważny"],
+                description: "Kompaktowy pies z charakterystycznymi uszami nietoperza. Idealny do życia w miejskim mieszkaniu."
+            }
+        ];
+
+        // Render breeds on load
+        function renderBreeds(filter = 'all') {
+            const grid = document.getElementById('breeds-grid');
+            grid.innerHTML = '';
+
+            const filtered = filter === 'all' 
+                ? breedsData 
+                : breedsData.filter(b => b.size === filter);
+
+            filtered.forEach(breed => {
+                const card = document.createElement('div');
+                card.className = "bg-white rounded-3xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group";
+                
+                let traitsHtml = breed.traits.map(t => `<span class="px-3 py-1 bg-amberCustom-50 text-amber-800 text-xs font-semibold rounded-full border border-amber-100">${t}</span>`).join('');
+
+                card.innerHTML = `
+                    <div class="relative h-60 overflow-hidden bg-stone-100">
+                        <img src="${breed.image}" alt="${breed.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/d97706/ffffff?text=Pies'">
+                        <span class="absolute top-4 right-4 px-3 py-1 bg-white/90 backdrop-blur-md text-stone-900 text-xs font-bold uppercase rounded-full shadow-md">
+                            ${breed.size}
+                        </span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold text-stone-900 mb-2">${breed.name}</h3>
+                            <p class="text-stone-600 text-sm leading-relaxed mb-6">${breed.description}</p>
+                        </div>
+                        <div>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                ${traitsHtml}
+                            </div>
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // Filter function triggered by buttons
+        function filterBreeds(size) {
+            // Update button styles
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.className = "filter-btn px-6 py-2.5 rounded-xl font-medium text-sm transition-all bg-white text-stone-700 hover:bg-stone-100 border border-stone-200";
+            });
+            event.target.className = "filter-btn active-filter px-6 py-2.5 rounded-xl font-medium text-sm transition-all bg-amber-600 text-white shadow-md shadow-amber-600/20";
+            
+            renderBreeds(size);
+        }
+
+        // Form submit handler
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const form = document.getElementById('newsletter-form');
+            const successDiv = document.getElementById('form-success');
+            
+            form.reset();
+            successDiv.classList.remove('hidden');
+            setTimeout(() => {
+                successDiv.classList.add('hidden');
+            }, 5000);
+        }
+
+        // Initialize on load
+        window.onload = function() {
+            renderBreeds('all');
+        }
+    </script>
+</body>
+</html>
